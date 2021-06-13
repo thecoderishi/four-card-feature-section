@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+.body {
+  background-color: var(--Very-Light-Gray);
+}
+
+.container {
+  padding: 50px 100px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 32px;
+  color: var(--Grayish-Blue);
+}
+.sub-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--Very-Dark-Blue);
+}
+.text {
+  padding: 10px 400px;
+  text-align: center;
+  font-weight: 200;
+  color: var(--Grayish-Blue);
+}
+
+.card-container {
+  display: flex;
+  padding: 0 130px;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-top: 35px; */
+}
+/* 
+.left,
+.middle,
+.right {
+  border: 1px solid red;
+} */
+
+.card {
+  width: 320px;
+  height: 210px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px var(--Grayish-Blue);
+}
+
+.card .title {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.card .desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--Grayish-Blue);
+}
+.middle .card {
+  margin: 40px 0;
+}
+
+.card .icon {
+  padding-top: 25px;
+  float: right;
+}
+
+.card-1 {
+  border-top: 3px solid var(--Cyan);
+}
+.card-2 {
+  border-top: 3px solid var(--Red);
+}
+.card-3 {
+  border-top: 3px solid var(--Orange);
+}
+.card-4 {
+  border-top: 3px solid var(--Blue);
+}
+
+@media (max-width: 890px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    padding-top: 120px;
+  }
+  .card-container {
+    flex-direction: column;
+    padding-top: 120px;
+  }
+  .text {
+    padding: 25px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
